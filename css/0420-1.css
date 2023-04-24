@@ -1,0 +1,36 @@
+html{ font-size: 20px;}
+.em{
+    font-size: 1em;
+}
+.per{
+    font-size: 100%;
+}
+.vw{
+    font-size: 5vw;
+}
+.px{
+    font-size: 16px;
+}
+.rem{
+    font-size: 1rem;
+}
+.pc{
+    font-size: 1pc;
+}
+html{
+    border:2px solid white;
+ }
+body{
+    border: 2px solid blue;
+ }
+html, body{
+    height: 100%;
+}
+.vw{
+    height: 20%; background: pink; width: 90vw;
+}
+.hex{    background-color: #f00;}
+.rgb{    background-color: rgb(255,0,0);}
+.rgba{    background-color: rgb(255,0,0,0.5);}
+.hsl{    background-color: hsl(360,100%,50%);}
+.hsla{    background-color: hsla(360,100%,50%,1);}
