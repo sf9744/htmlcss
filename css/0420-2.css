@@ -1,0 +1,14 @@
+
+/* aria-label
+aria-labeledby */
+.box{ width:150px; height:50px;
+border: 2px solid red;
+background-color: yellow;}
+.display{ display: none;}
+.visible{ visibility: hidden;}
+.opacity{ opacity: 0.5;}
+.text{ text-indent: -999px;}
+.pos{ position: absolute; left: -999;}
+.width{ position: absolute; width: 1px; height:1px;
+clip: rect(0 0 0 0); overflow: hidden;}
+font{ font-size: 0;}
