@@ -1,0 +1,70 @@
+ul {
+    width: 600px;
+    margin: 30px;}
+
+ul>li {
+    float: left;
+    position: relative; 
+    text-align: center;}
+
+ul>li:hover {
+    background: rgb(47, 50, 51);}
+
+ul>li:hover>ol {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;}
+
+ul a {
+    display: block;
+    padding: 12px;
+    color: white;
+    background: rgba(45, 155, 199, 0.911);}
+    
+ol {
+    position: absolute;
+    opacity: 0;
+    width: 150%;}
+
+ol>li {
+    background: rgb(1, 13, 19);
+    height: 0;}
+
+ul:after {
+    content: '';
+    display: block;
+    clear: both;}
+
+ol>li:hover {
+    background-color: rgb(1, 1, 7);}
+
+ol>li>a {
+    position: relative;}
+
+ol>li>a:hover:before {
+    width: 5px;
+    transition: 0.2s;}
+
+
+ul>li>a {
+    position: relative;}
+
+ul>li>a:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 1px;
+    background: white;}
+
+ul>li>a:hover:after {
+    width: 100%;
+    transition: 0.5s;
+    left: 0;}
+
+ul>li:hover>ol>li {
+    height: 45px;
+    transition: 0.51s}

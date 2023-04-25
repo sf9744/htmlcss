@@ -28,4 +28,26 @@
     border-image: url(../imgs/border4.png) 50 round;
     margin: 20px; 
 }
+.borderimg5{
+    border:20px solid transparent;
+    padding:30px;
+    border-image: url(../imgs/구글.png) 50 round;
+    margin:20px;
+}
+
+
+
+ul{ margin: 30px;}
+ul>li{
+    list-style-type: decimal;
+list-style-position: outside;
+list-style-position: inside;
+list-style-image: url(../imgs/cat.jpg);
+list-style: none;
+list-style: upper-alpha inside;
+}
+ul>li:hover{
+    list-style-image: url(../imgs/구글.png);
+}
+
 
