@@ -31,21 +31,18 @@ ul li:hover {
 }
 ul>li:hover>ol {
 display: block;
-/* height: 200px;
-width: 100px;
-left: 100%;
-top: 0; 이건 왜 들어갔을까?*/
 left: 100%;
 width: 300px;
 top:0%;
 height: 200px;
 }
 
-ul li>a:hover {
+ ul li>a:hover {
     color: green;
 }
 ol>li{
-    background-color: green;
+    background-color: rgb(180, 189, 180);
+    
 }
 :not(:last-child){
     border-bottom: 1px solid white;

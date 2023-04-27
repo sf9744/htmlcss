@@ -1,0 +1,31 @@
+.top {
+    text-align: center;
+    font-style: italic;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.nav>h1 i {
+    font-size: 3vw;
+    min-width: 2vw;
+    max-width: 5vw;
+}
+
+.bottom {
+    position: relative;
+    text-align: center;
+}
+.bottom i{
+    position: absolute;
+    left:5px;
+    top: 8px;
+}
