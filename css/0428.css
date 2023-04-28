@@ -1,0 +1,55 @@
+/* 공통스타일 */
+header{
+    border:2px double black;
+    margin: 10px;
+}
+/*모바일*/
+@media screen and (max-width:760px) {
+.wrap{ background-color: lime;}
+}
+nav ul li{
+    display: inline-block;
+    width: auto;
+    text-align: center;
+        }
+/* 태블릿 */
+@media screen and (min-width:761px) and (max-width:959px){
+    .wrap{ background-color: gold;}
+    nav ul {  
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+nav ul li{
+    /* display: inline-block; */
+    width: 30%;
+    text-align: center;
+    border:1px solid gray;
+    margin: 5px;
+}
+nav ul li:nth-child(4) { width: 48%;}
+nav ul li:nth-child(5) { width: 48%;}
+
+}
+/* pc */
+@media screen and (min-width:960px){
+    .wrap{ 
+        /* background-color: gray; */
+    border-color: gray ;
+    border:1px solid black;
+    max-width: 1280px;
+    margin: auto;
+    }
+    nav ul li{float:left; width:20%; text-align:center;}
+    nav ul{ overflow: hidden; }
+
+}
+
+/* 세웠을때 */
+@media screen and (orientation:portrait){
+    h1{ font-size:35px; color:blue;}       
+}
+/* 눕혔을때 */
+@media screen and (orientation:landscape){
+        h1{ font-size:45px; color: gray;}
+}
