@@ -1,0 +1,176 @@
+section {
+    border: 1px solid;
+}
+
+section>div {
+    width: 5px;
+    height: 20px;
+    background-color: red;
+}
+
+section:hover>div:nth-child(1) {
+    width: 300px;
+    transition-duration: 1s;
+}
+
+section:hover>div:nth-child(2) {
+    width: 350px;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+    background-color: blue;
+}
+
+section:hover>div:nth-child(3) {
+    width: 450px;
+    transition-duration: 1s;
+    transition-delay: 1.0s;
+    background: rgb(183, 255, 0);
+    transition-property: width, background-color;
+}
+
+section:hover>div:nth-child(4) {
+    width: 300px;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.11, 1.25, .69, .8);
+    background: gold url(../imgs/cat.jpg) no-repeat left top scroll / 10px 50px;
+
+}
+
+section:hover>div:nth-child(5) {
+    transition: 100 1s 2s ease;
+    width: 500px;
+    background-color: tomato;
+    background-size: contain;
+}
+
+div>h1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: blue;
+    animation-name: myani;
+    animation-duration :1s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+div:hover>h1{
+    animation-play-state: paused;
+}
+@keyframes myani {
+    from {
+        left: 0;
+        background: red;
+    }
+50%{
+    transform: rotate(360deg);
+}
+    to {
+        left: 200px;
+    }
+
+}
+/* 연습문제 */
+
+[id*=box]{
+    width: 100px;
+    height: 100px;
+    background: orange;
+    border: 1px solid;
+}
+#box1{ animation: box1_ani 3s alternate infinite;
+margin:30px; position: relative;}
+#box2{animation: box2_ani 3s alternate infinite;
+    margin:30px; position: relative;}
+
+@keyframes box1_ani {
+    0% {left:0; background: orange;}
+    50% {left:0; top:100px; background: blue;
+    transform: rotate(180deg);}
+    100% {left:200px; background: orange;
+    transform:rotate(360deg);}
+}
+@keyframes box2_ani {
+    0% {left:200px; background: rgb(255, 72, 0);}
+    50% {left:100PX; top:100px; background-color: pink;
+    transform: rotate(180deg);}
+    100% {left:0px; background: rgb(94, 92, 88);
+    transform:rotate(360deg); top:100px}
+}
+
+/* 이미지슬라이드 */
+.canvas {
+    width: 500px;
+    height:400px;
+    border: 2px solid block;
+    position: relative;
+}
+.panel{
+    position: absolute;
+    left:0; top:0;
+    width: 2500px;
+}
+.panel>img{
+    width:500px;
+    height: 400px;
+    display:block;
+    float: left;
+}
+@keyframes slider{
+    from{ left: 0;}
+    20%{ left: -500px;}
+    40%{ left: -1000px;}
+    60%{ left: -1500px;}
+    to{ left: -2000px;}
+}
+.panel{
+    animation: slider 10s infinite alternate;
+}
+.canvas{
+    overflow: hidden;
+}
+.canvas:hover>.panel{
+    animation-play-state: paused;
+}
+
+/* 세로슬라이드 */
+.panel2{
+    animation: slider2 10s infinite alternate;
+}
+.canvas2{
+    overflow: hidden;
+}
+.canvas2:hover>.panel2{
+    animation-play-state: paused;
+}
+.canvas2 {
+    width: 500px;
+    height:400px;
+    border: 2px solid block;
+    position: relative;
+}
+.panel2{
+    position: absolute;
+    left:0; top:0;
+    width: 2500px;
+}
+.panel2>img{
+    width:500px;
+    height: 400px;
+    display:block;
+    /* float: left; */
+}
+
+@keyframes slider2{
+   from{top: 0;}
+    20%{top: -400px;}
+    40%{top: -800px;}
+    60%{top: -1200px;}
+    to{top: -1600px;}
+}
+#canvas>.panel{
+    animation: slider2 10s infinite alternate;
+    border:5px solid red !important;
+    width:500px;
+}
