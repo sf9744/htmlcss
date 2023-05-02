@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(255, 238, 238);
+}
+.header{
+    display: block;
+    border: 1px solid lightgray;
+    text-align: right;
+    padding-right: 100px;
+    height: 26px;
+    padding-top: 4px;
+}
+.header>a{
+    color: black;
+    font-size: 14px;
+}
+.mainmenu{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+}
+.sidemenu>li{
+    display: block;
+    float: left;
+    margin: auto 40px;
+    font-size: 19px;
+}
+.sidemenu a{
+    color: black;
+}
+.lang{font-size: 16px;font-weight: bold;}
+.xi-bars,.xi-close{font-size: 35px; color: black;}
+.xi-close{
+    visibility:hidden;
+}
+.body{
+    width: 100%;
+    height: 10px;
+}
+.body>div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.lang{
+    background: none;
+}
+.mainmenu:hover{
+    border-bottom: 1px solid lightgray;
+    background-color: white;
+    position: absolute; top: 0;
+    height: 500px;
+}

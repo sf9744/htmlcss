@@ -1,0 +1,33 @@
+#box1 {
+  color: red;
+}
+
+#box2 {
+  margin: 5px;
+}
+
+h1 {
+  color: blue;
+}
+
+body {
+  color: blue;
+  font-size: 16px;
+  font-family: serif;
+}
+
+ul {
+  font-size: 20px;
+  background: silver;
+}
+ul a {
+  color: red;
+}
+
+ul > li {
+  border: 3px solid;
+  margin: 10px;
+}
+ul {
+  border: 5px solid red;
+}/*# sourceMappingURL=test.css.map */
