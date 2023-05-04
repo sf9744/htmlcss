@@ -30,15 +30,16 @@ body {
 ul {
     font-size: 20px;
     background: silver;
-
+li{ float: left;
     a {
         color: red;
     }
-}
+}}
+
 // -----------------------여기부터 안나옴----------
 //& -> 자기 자신요소
 ul {
-    &>li {
+    >li {
         border: 3px solid;
         margin: 10px;
     }
@@ -52,7 +53,7 @@ ul {
 
 
 ul {
-    &>li {
+    >li {
         border: 3px solid black;
         margin: $top;
 
@@ -176,8 +177,30 @@ header {
 }
 
 // 반복문
-@for $i from i through 5{
+@for $i from 1 through 5{
     div:nth-child(#{$i}){
         font-size: 10px * $i;
     }
+}
+//{} 보간문자
+@each $var in book, zoom, phone {
+    .ico_#{$var}{
+        background:url(imgs/#{$var}.png);
+    }
+}
+//,조건문
+@mixin btn_radius($h, $radius:true){
+height:$h;
+line-height: $h;
+@if $radius{
+    border-radius: $h / 2;
+}@else{
+    border: 3px solid red;
+}
+}
+.btn{
+    @include btn_radius(30px, true )
+}
+.btn{
+    @include btn_radius(30px, false)
 }

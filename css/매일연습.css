@@ -1,0 +1,17 @@
+body{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+div{
+    border: 1px solid blue;
+    width: 10px;
+    height: 10px;
+    /* position: absolute; */
+    left:20px;
+    top:10px;
+  
+}
+

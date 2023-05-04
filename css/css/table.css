@@ -1,0 +1,32 @@
+ .table1{
+    /* border:1px solid red; */
+    border-collapse: collapse;
+    border-spacing: 0;
+    
+} 
+/* .table1 tr{
+    border:1px solid blue;
+}*/
+.table1 td {
+    border:1px solid gold; 
+    empty-cells: hide;
+}
+
+/* 
+/* .table1 tr {
+    border: 1px solid gold;
+} */
+
+
+
+
+
+ul {
+    display: table;
+}
+
+ul li {
+    display: table-cell;
+    padding: 10px;
+    border: 1px solid red;
+}
