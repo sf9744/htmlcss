@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scc/reset.css">
+    <link rel="stylesheet" href="css/switch.css">
+    <title>스위치버튼만들기</title>
+</head>
+
+<body>
+<h1>모달창 연습</h1>
+<a href="momo">모달모달</a>
+<div id="mo">
+    <div class="mo_mo">
+        <img src="../imgs/border2.png" alt="모">
+        <a href="#">닫기</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- --------------------------------------------------- -->
+    <h1>모달창 만들기</h1>
+    <a href="#modal" class="btn">모달창 보이기</a>
+    <hr>
+    <div id="modal">
+        <div class="modal-body">
+            <img src="./imgs/cat.jpg" alt="cat">
+            <hr>
+            <a href="#">닫기</a>
+        </div>
+    </div>
+    <p>버튼이나 사진을 클릭했을때 튀어나오는 화면, modal popup모달팝업이라고 하며,
+        라이트 박스라고도 한다. modal은 독점적인..다른 컨텐츠는 선택이 안되고, 팝업창이
+        화면중앙에 위치하면 일반적으로 배경색은 반투명 고정이 보통이다 </p>
+    <hr>
+
+    <h1>스위치 버튼 만들기</h1>
+    <div class="switch">
+        <input type="checkbox" id="sw1" class="input-on-off">
+        <label for="sw1" class="label-on-off">
+            <span class="marble"></span>
+            <span class="on">on</span>
+            <span class="off">off</span>
+        </label>
+    </div>
+    <!-- _____________________________________________________ -->
+    <h1>3단스위치 만들기</h1>
+    <div class="switch2">
+
+        <input name="switch2" id="one" type="radio" checked />
+        <label for="one" class="switch_label">one</label>
+
+        <input name="switch2" id="two" type="radio" checked />
+        <label for="two" class="switch_label">two</label>
+
+        <input name="switch2" id="three" type="radio" checked />
+        <label for="three" class="switch_label">three</label>
+
+        <div class="switch_indicator"></div>
+        <!-- <div class="switch_indicator"></div> -->
+    </div>
+    <!-- ----------------------------------------------------------- -->
+    <h2>이미지 좌우 및 수직 반전</h2>
+    <img src="../imgs/leedragon.jpg" alt="재용님">
+    <style>
+        /* 이미지 좌우반전 */
+        img:hover {
+            transform: rotate(0deg);
+            transform: scaleX(-1);
+            /* 원점을 지나는 수직축이 있는 대칭축을 의미 */
+            filter: FlipH;
+            transition: 1s;
+        }
+
+        /* 이미지 수직반전 */
+        img:active {
+            transform: rotate(0deg);
+            transform: scaleY(-1);
+            /* 원점을 지나는 수평축이 있는 대칭축을 의미 */
+            filter: FlipH;
+            transition: 1s;
+        }
+    </style>
+    <!-- ----------------------------------------------------------- -->
+    <div class="progress_bar">
+
+        <input name="progress_bar" id="one" type="radio" checked />
+        <label for="one" class="switch_label">5%</label>
+
+        <input name="sprogress_bar" id="two" type="radio">
+        <label for="two" class="switch_label">25%</label>
+
+        <input name="progress_bar" id="three" type="radio">
+        <label for="three" class="switch_label">50%</label>
+
+        <input name="progress_bar" id="four" type="radio" checked />
+        <label for="three" class="switch_label">75%</label>
+        <input name="progress_bar" id="four" type="radio" checked />
+        <label for="three" class="switch_label">100%</label>
+        <div class="pro_bar"></div>
+    </div>
+
+</body>
+
+</html>
