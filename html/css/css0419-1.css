@@ -1,0 +1,26 @@
+[class=newspaper]{
+    background-color: red;
+}
+[class~=news]{
+    background-color: blue;
+}
+[class|=news]{
+    background-color: yellow;
+}/*newsp라는 글자로 시작하는 요소선택*/
+
+
+[class^=newsp]{ 
+    border:3px solid black; /*글자테두리*/
+    margin: 10px; /*글자그림자*/
+}
+
+
+[class$=ers]{ 
+    -webkit-text-stroke:1px red;
+    text-shadow: 1px 1px gray;
+} /*ers라는 글자로 끝나는 요소*/
+
+
+[class*=newp]{
+    background: tomato;
+}/*클래스명이 newp라는 글자가 포함되는 요소*/

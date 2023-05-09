@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹표준을 위한 태그</title>
+
+
+</head>
+
+<body>
+    <h1>웹표준을 위한 마크업 공식</h1>
+    <!-- 1.이미지에 alt속성 반드시 입력하고 속성사이는 띄어쓰기한다. -->
+    <img src=".imgs/cat1.png" alt="이미지 설명" width="100" height="100">
+    <!-- 2.table에 들어가는 속성은 css로 처리한다 -->
+    <table width="100" height="100" cellspacing="1" cellpadding="1">2222
+        <!-- 잘못된 방식 -->
+    </table>
+
+    <tabl style="border-collapse: collapse;">333
+        <colgroup>
+            <col style="width:100px">
+            <col style="width:100px">
+        </colgroup>
+    </tabl>
+    <!-- 3.section 태그에는 heading 머리말태그가 포함되어야 한다. -->
+    <section>
+        <h2 aria-label="제목2">색션 제목</h2>
+    </section>
+    <!-- 4.style태그는 head head태그에 있어야 된다 -->
+    <style>
+        /*css코딩-위치선정잘못*/
+    </style>
+    <!--5.ul,ol태그 내부에는 div태그등 기타 다른태그가 자식으로 존재할 수 없다-->
+    <!-- div태그를 ul,ol태그로 감쌀 수 있다.wrapper -->
+    <ul>
+        <div>목록제목 -> xxx </div>
+        <li> 목록 </li>
+    </ul>
+    <!-- 좋은예 -->
+    <div>
+        <ul>
+            <li><a href="#"></a></li>
+        </ul>
+    </div>
+    <!-- div는 영역을 그룹핑 하기 위한 역할 -->
+    <!-- p태그 내부에 제목태그를 넣으면 안된다. 그반대도 안된다 -->
+    <p>문단시작
+    <h2>제목</h2>
+    </p> -xxx
+
+    <!-- address태그는 p태그를 자식태그로 넣을 수 있다 -->
+    <address>주소<p>내용</p>
+    </address>
+    <!-- p태그에 div태그가 들어갈수 없다. 그반대는 가능 -->
+    <!-- 7.meta,title,html태그는 반드시 입력한다. -->
+    <!-- 8.a태그 내부에 label태그가 자식으로 존재하면 안됨,그반대는 가능 -->
+    <a href="#"> <label>링크---xxxxx</label></a>
+    <label for=""> <a href="#">링크-가능</a></label>
+    <button>버튼</button> <a href="#"> click</a>
+    <a href="#"> <button>버튼</button></a> <b>---xxxx</b>
+    9div태그는 <span></span>
+    <!-- 10.ul태그등, 텍스트가 단독으로 존재해서는 안된다 -->
+    <!-- 11.a태그 내부에 자식으로 a태그를 삽입하면 안된다 -->
+    12.nav태그에 대해서
+</body>
+
+</html>

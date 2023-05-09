@@ -1,0 +1,19 @@
+ul>li>a{ display: block;}
+ul>li{
+    background: linear-gradient(180deg, darkgreen, lime);}
+    ul>li{ float: left;}
+    ul>li:nth-child(1){ border-right: 1px solid gray;}
+ul>li:nth-child(2){ border-right: 1px solid gray;}
+ul>li:nth-child(3){ border-right: 1px solid gray;}
+ul>li:nth-child(4){ border-right: 1px solid gray;}
+ul>li>a{ display: block; padding: 10px; color: white;}
+ul>li{ width:18%; text-align: center;font-weight: bold;}
+ul>li:hover>a{ text-shadow: 1px 1px black;}
+ul{ margin:20px;}
+ul>li:last-child{ border-radius: 0 10px 0 0 ;}
+ul>li:first-child{ border-radius: 10px 0 0 0 ;}
+ul>li:hover{ background: linear-gradient(180deg, darkgreen, green);}
+
+h1{ clear: both }
+h1{ clear: both }
+

@@ -1,0 +1,64 @@
+#wrap{
+    margin:100px;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+ul{
+    height:100%;
+}
+ul>li{
+    border: 1px solid rgb(247, 87, 72);
+    background-color: rgb(254, 101, 88);
+}
+ul>li>a{
+    font-size: 18px;
+    display: block;
+    height: 35px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+#wrap ol li{
+    background-color: rgb(33, 40, 77);
+    border-bottom: 1px solid rgb(55, 70, 117);
+}
+ol{
+    position: relative;
+}
+#wrap a{
+    color: white;
+}
+#wrap ol li{
+    height: 0;
+    transition: 0.5s;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 1;
+    /* border-bottom: 1px solid rgb(58, 75, 127); */
+} 
+#wrap ol:target li{
+    height: 35px;
+    color: white;
+    line-height: 40px;
+    text-indent: 30px;
+    visibility: visible;
+    opacity: 1;
+}
+ol::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border: 5px solid rgb(38, 46, 85);
+    border-top: 8px solid rgb(255, 110, 97);
+    position: absolute;
+    left: 170px; top: 0px;
+    visibility: hidden;
+    transition: 0s;
+    opacity: 0;
+}
+#wrap ol:target::after{
+    visibility: visible;
+    transition: 1s;
+    opacity: 0.5;
+}

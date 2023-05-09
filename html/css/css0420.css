@@ -1,0 +1,5 @@
+#box{ width: 150px; height: 100px;
+background: pink;
+display: none;}
+
+input[type=checkbox]:checked+#box{ display: block;}

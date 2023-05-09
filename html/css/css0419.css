@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Noto+Sans+KR:wght@500&family=Noto+Serif+Telugu:wght@700&display=swap');
+
+.bold{
+    font-weight: 100;
+}
+.caps{
+    font-variant: small-caps;
+}
+.font{
+    font-family: 'Times New Roman', Times, "궁서체"
+}
+
+.line{
+    line-height: 1.6;
+    border:3px solid;
+}
+p{
+    font:italic small-caps 
+}

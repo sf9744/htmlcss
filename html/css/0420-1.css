@@ -1,0 +1,70 @@
+/* 탭메뉴의 a태그를 박스처리
+탭메뉴의 li태그는 float처리
+부모태그 ul은 float처리(5가지공식)
+탭컨텐츠는 숨김처리
+target으로 제어한다. */
+section {
+    margin: 20px;
+}
+
+a {
+    display: block;
+    padding: 10px 0;
+    font: bold 20px;
+    color: white;
+    background: rgb(104, 104, 95);
+    text-align: center;
+
+}
+
+ul {
+    border: 4px solid;
+}
+
+ul>li {
+    width: 33%;
+    float: left;
+}
+
+
+/* width:calc(100% / 3); */
+/* ul>li:nth-child(1){border-right: 1px solid red;} */
+
+ul>li:not(:last-child) {
+    border-right: 1px solid white;
+}
+
+article>p {
+    display: none;
+}
+
+article>p:target {
+    display: block;
+
+}
+
+p{
+    border: 3px solid gray;
+    text-align: center;
+    padding: 15px;
+ 
+    background:rgb(238, 238, 105);
+font-weight: bold;
+height: 100px;
+}
+
+
+/* -------------------- */
+ul>li:hover>a{
+    background: ibory;
+    }
+ul>li>a::after{
+    content:"";
+    display: block;
+    background-color:aqua;
+    width: 0%;
+    margin: auto;
+    transition: 0.4s;
+}
+
+ 

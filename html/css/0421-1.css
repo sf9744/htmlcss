@@ -1,0 +1,65 @@
+ul{ width: 980px;
+    height: 100px;
+    margin: 10px; 
+    display: flex;}
+/* 질문:margin과 display의 영향은? */
+
+
+
+ul>li{ float: light; /* 질문:float은, ul로 지정하면 li도 영향미치는거 아님? */
+    width:140px; height:50px;
+    background: url('../imgs/menu2.png');
+background-color: red;
+list-style: none;/* 질문:reset과 연결 안된거? */
+}
+ol>li{ list-style: none; }
+ul>li>a{ display: block; text-indent: -9999px;}
+ul{ margin:100px auto;}
+
+ul::after{ content:''; display: block; clear: both;}
+
+ul>li:nth-child(1){ background-position: 0 0;}
+ul>li:nth-child(2){ background-position: 0 -50px;}
+ul>li:nth-child(3){ background-position: 0 calc(-50px *2);}
+ul>li:nth-child(4){ background-position: 0 calc(-50px *3);}
+ul>li:nth-child(5){ background-position: 0 calc(-50px *4);}
+ul>li:nth-child(6){ background-position: 0 calc(-50px *5);}
+ul>li:nth-child(7){ background-position: 0 calc(-50px *6);}
+ 
+ul>li:nth-child(1):hover{ background-position-y: -350px;}
+ul>li:nth-child(2):hover{ background-position-y: -400px;}
+ul>li:nth-child(3):hover{ background-position-y: -450px;}
+ul>li:nth-child(4):hover{ background-position-y: -500px;}
+ul>li:nth-child(5):hover{ background-position-y: -550px;}
+ul>li:nth-child(6):hover{ background-position-y: -600px;}
+ul>li:nth-child(7):hover{ background-position-y: -650px;}
+
+/* ---------------- */
+
+ol a{ display: block; height: 100%; text-indent: -9999px;}
+ol{ width:980px; height: 50px; display: flex; margin:auto;}
+
+ol li{ background: url('../imgs/menu2.png'); flex: 1;}
+:root{
+    --width:-50px;
+}
+ol li:nth-child(1){ background-position: 0 0;}
+ol li:nth-child(2){ background-position: 0 calc(var(--width)*1);}
+ol li:nth-child(3){ background-position: 0 calc(var(--width)*2);}
+ol li:nth-child(4){ background-position: 0 calc(var(--width)*3);}
+ol li:nth-child(5){ background-position: 0 calc(var(--width)*4);}
+ol li:nth-child(6){ background-position: 0 calc(var(--width)*5);}
+ol li:nth-child(7){ background-position: 0 calc(var(--width)*61);}
+
+ol li:nth-child(1):hover{background-position: 0 calc(var(--width)*7);}
+ol li:nth-child(2):hover{background-position: 0 calc(var(--width)*8);}
+ol li:nth-child(3):hover{background-position: 0 calc(var(--width)*9);}
+ol li:nth-child(4):hover{background-position: 0 calc(var(--width)*10);}
+ol li:nth-child(5):hover{background-position: 0 calc(var(--width)*11);}
+ol li:nth-child(6):hover{background-position: 0 calc(var(--width)*12);}
+ol li:nth-child(7):hover{background-position: 0 calc(var(--width)*13);}
+
+ol li:nth-child(1):active{ background-position: 0 0;}
+ol li:nth-child(2):active{ background-position: 0 calc(var(--width)*1);}
+ol li:nth-child(3):active{ background-position: 0 calc(var(--width)*1);}
+ol li:nth-child(4):active{ background-position: 0 calc(var(--width)*1);}

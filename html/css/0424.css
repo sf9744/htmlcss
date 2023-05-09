@@ -1,0 +1,111 @@
+#mama {
+    border: 1px solid red;
+    padding: 5px;
+}
+
+div.box {
+    border: 1px solid;
+    width: auto;
+    float: left;
+    padding: 10px;
+
+}
+
+h2 {
+    clear: both;
+}
+
+#mama {
+    /* float: left; */
+    margin: auto;
+    width: 300px;
+    overflow: scroll;
+    /* height: 40px; */
+}
+
+/* #box3 [height:50px; background: red; */
+/* #mama:hover{ */
+/* overflow: visible;} */
+#mama::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#mama2 {
+    border: 1px solid;
+    text-align: center;
+}
+
+.box1 {
+    border: 1px solid;
+    /* display: inline-block; */
+    display: inline;
+    line-height: 3;
+    float: left;
+}
+
+.box2,
+#mama3 {
+    border: 1px solid blue;
+    padding: 5px;
+    margin: 5px;
+}
+
+#mama3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#mama3:hover {
+    justify-content: space-around;
+}
+
+#mama3:active {
+    justify-content: space-evenly;
+}
+
+
+
+
+#mama4{
+    border: 1px solid;
+    width:500px; height:300px;
+    /* overflow: scroll; */
+    position: relative;
+}
+.box3{
+    border:1px solid red;
+width:100px; height:100px;
+background: gray;
+position: absolute;
+}
+.box3:nth-child(1){
+    left:0; top:0; background: red;
+}
+.box3:nth-child(2){left:320px; top:10; background: blue;}
+.box3:nth-child(3){left:130px; top:0; background: pink;}
+.box3:nth-child(4){left:530px; top:0; background: yellowgreen;}
+.box3:nth-child(5){left:50px; top:10; background: black; position: sticky;}
+#mama4{
+    left:10px; top:-300-px;
+    position: sticky;
+}
+
+#mama5{
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(3, 6fr);
+    position: sticky;
+}
+.box4{
+    border:1px solid blue;
+    margin:5px;
+}
+section{height: 1000px;}

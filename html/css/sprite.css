@@ -1,0 +1,33 @@
+/* 메뉴크기 118x76
+전체 ul의 크기는 580px,가운데정렬
+a태그는 block처리
+li와 a태그는 116x76 크리롤 정한다 */
+
+ul{
+    width:580px;
+    margin:auto; /*박스 가운데 정렬*/
+}
+ul>li{
+    float:left; /*박스 가로방향으로 배치*/
+    width:116px; height:38px;
+    background: url('../imgs/menu.png');
+}
+ul>li>a{
+    display: block; text-indent: -9999px;
+}
+ul::after{
+    content:''; display: block; clear: both;
+}
+ul{ margin:30px auto;}
+
+ul>li:nth-child(1){ background-position: 0 0;}
+ul>li:nth-child(2){ background-position: -116px 0;}
+ul>li:nth-child(3){ background-position: calc(-116px *2) 0;}
+ul>li:nth-child(4){ background-position: calc(-116px *3) 0;}
+ul>li:nth-child(5){ background-position: calc(-116px *4) 0;}
+ 
+ul>li:nth-child(1):hover{ background-position: 0 -38px;}
+ul>li:nth-child(2):hover{ background-position: -116px -38px;}
+ul>li:nth-child(3):hover{ background-position: calc(-116px *2)-38px;}
+ul>li:nth-child(4):hover{ background-position: calc(-116px *3)-38px;}
+ul>li:nth-child(5):hover{ background-position: calc(-116px *4)-38px;}

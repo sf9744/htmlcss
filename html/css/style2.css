@@ -1,0 +1,23 @@
+ul>li:nth-child(2n){ background-color: tan;}
+ul>li:nth-child(2n+1){ background-color: orange;}
+ul>li{ float:left;}
+
+h1:last-of-type{
+    clear:left;
+}
+ul>li>a{
+    display: block;
+    padding:5px 10px;
+}
+ul{ margin-left:20px; }
+ul>li:first-child{
+    border-radius: 10px 0 0 10px;
+}
+ul>li:last-child{
+    border-radius: 0 10px 10px 0;
+}
+ul>li:hover{ background: pink; 
+text-transform: uppercase;}
+ul>li{ width:100px; text-align: center; }
+ul{ border:1px solid red; width: 700px;}
+h1{ width: 600px; }

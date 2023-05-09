@@ -1,0 +1,54 @@
+div[class=box]{
+    border:5px solid rgba(255,0,0,0.2);
+    width:400px;
+    text-align: center;
+    margin: auto;
+}
+p[class=tittle]{
+    text-align: center;
+    background: lime;
+    width: auto;
+    margin: auto;
+    border:5px solid red;
+}
+input[type=text]{
+    color:blue; padding:5px;
+    margin:10px;
+}
+div[class=box]+ul{
+    width:400px;
+    border:3px solid black;
+    box-shadow: 4px 4px gray;
+    padding:10px;
+}
+div[class=box]~ul{
+    background-color: orange;
+    color:black;
+    font-weight: bold;
+    padding: 20px;
+    width: 300px;
+    margin:10px;
+}
+
+/*reset.css, common.css*/
+a{ font-style: italic; }
+a:link{ font-weight: bold; }
+a:hover{ background: pink; }
+a:active{ text-decoration: underline}
+a:visited{ 
+    /*text-decoration: line-through;*/
+color: green;
+}
+ol>li:first-child{ background-color: red;}
+ol>li:first-child{ background-color: orange;}
+ol>li:nth-child(2n){ background: orange;}
+ol>li:nth-child(2n+1){ background: pink;}
+ol>li:nth-child(3){ background: red;}
+
+ol>li:first-of-type{ font-sixe: 20px;}
+ol>li:last-of-type{ font-sixe: 20px;}
+ol>li:nth-of-type(2){ color: red;
+background: gray;
+}
+:nth-child(18){ background: red;}
+h2:last-of-type{ background-color: blue;} 

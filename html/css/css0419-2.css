@@ -1,0 +1,35 @@
+body {
+    color: black;
+}
+
+div {
+    color: red;
+    /* border:1px solid; */
+    margin: 10px;
+}
+
+header {
+    border: 1px solid blue;
+}
+
+p {
+    border: inherit;
+    margin: inherit;
+}
+
+div>p {}
+
+h1 {
+    border: 1px solid;
+}
+ul,li { color: orange;}
+a { border: 1px solid;}
+ol> { color: pink;}
+
+dl>dt{ background: red;}
+dl>dt{ background: blue;}
+dt.aaa{ background: gray;}
+#aaa{ background: orange;}
+dt#aaa{ background: gold;}
+dt#aaa.aaa{ background: tomato;}
+dt.aaa#aaa{ background: silver;}

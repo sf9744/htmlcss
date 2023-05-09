@@ -1,0 +1,36 @@
+body {
+    margin: 30px;
+}
+
+#box {
+    width: 150px;
+    height: 100px;
+    background: pink;
+    display: none;
+}
+
+input[type=checkbox]:checked+#box {
+    display: block;
+}
+
+label {
+    cursor: pointer;
+}
+
+input[type=text]:focus {
+    outline: 2px solid red;
+    border: 3px solid blue;
+}
+
+/*border는 테두리이고, 레이아웃에 영향
+    outline은 테두리,디자인용,레이아웃과 무관*/
+[type=tel]:enabled {
+    border: 2px solid red;}
+
+[type=tel]:disabled {
+    border: 2px solid gray;}
+
+/*readonly는 입력은 안되고 기존의 value*/ #box:target {
+    display: block;}
+
+/*아이디가 box인 요소에 taget이 걸리면 #box를 보여라*/

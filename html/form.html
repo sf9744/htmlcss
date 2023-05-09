@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="#aaa">aaa</a>
+    <h1>입력양식태그</h1>
+    <h2> 회원가입</h2>
+    <form action="http://127.0.0.1:5502/result.html" method="get">
+        <fieldset>
+            <legend>필수개인정보</legend>
+            <label for="name">이름 :</label>
+            <input type="text" name="name" id="name" size="10" minlength="3" maxlength="8">
+            <br>
+            <label>
+                아이디 :
+                <input type="text" placeholder="영문숫자만입력" size="12" name="id" required>
+                <input type="button" value="중복검사">
+            </label> <br>
+            비밀번호 : <input type="password" size="10"> <br>
+            비밀번호확인 : <input type="password" size="10">
+            <hr>
+        </fieldset>
+        <fieldset>
+            <legend>추가입력사항</legend>
+            ❤ 성별
+            <label for="woman">여성</label> :
+            <input type="radio" name="gender" id="woman" checked>
+            <label for="man"> 남성 : </label>
+            <input type="radio" name="gender" id="man"> <br>
+            이메일 : <input type="email" name="" id=""><br>
+            취미: 
+            <input type="checkbox" checked id="san"><label for="san">등산</label> 
+            <input type="checkbox" id="internet"><label for="internet">인터넷</label>
+            <label> <input type="checkbox"> 게임 </label>
+            <label><input type="checkbox"> 독서</label>
+            <br>
+            신발크기 <select name="shoes">
+                <optgroup label="여성용">
+                    <option value="220"> 220mm</option>
+                    <option value="230"> 230mm</option>
+                    <option> 240mm</option>
+                </optgroup>
+                <optgroup label="남성용">
+                    <option selected value="250"> 250mm</option>
+                    <option> 260mm</option>
+                    <option> 270mm</option>
+                </optgroup>
+            </select> <br>
+            생년월일 : <input type="date"> <br>
+            좋아하는 색 : <input type="color" name="" id=""> <br>
+            연령대는? <input type="number" step="10" max="100" min="10"><br>
+            입사월 : <input type="month"> 입사주 : <input type="week"><br> 
+            전화번호 : <input type="tel">           
+        </fieldset>
+         제출서류 : <input type="file"><br> 
+
+        <input type="submit" value="전송">
+        <input type="reset" value="다시쓰기">
+    </form>
+    <hr>
+    <form action="http://www.daum.net" method="get" enctype="multipart/form-data">
+        제출서류 : <input type="file"><br> 
+        자기소개서 : <br>
+        <textarea cols="20" rows="5" style="resize: none;">  
+            하고싶은 말 ...
+        </textarea><br>
+
+        <input type="submit" value="전송">
+    </form>
+       <h1> 모바일 링크 </h1>
+    <a href="tel:010-444-7777"> 전화걸기</a> <br>
+    <a href="sms:010-444-7777"> 문자보내기</a> <br>
+    <a href="mailto:admin@daum.net"> 이메일보내기</a> <br>
+<iframe src="http://maps.google.com/maps?q=모란역&z=16"></iframe>
+
+
+
+
+
+
+
+
+
+<p name="bbb">aaaaaaa</p>
+<a name="aaa">aaa</a>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+
+<플랙스 공식 : 플랙스 컨테이너안에 담아서 수평 수직 위치를 조절>
+   display: flex; ->
+ 수평:  justify-content: center;
+ 수직: align-items: center;
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+.box {
+    width: 500pm;
+    height: 400px;
+    border: 10px solid rgba(255, 0, 0, 0.2);
+    margin: 10px;
+    background-color: white;
+    padding: 10px;
+    background-image: url('../imgs/cat.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box:hover {
+    /* background-color: cyan; */
+    /* box-sizing: border-box;
+    background-image: url(../imgs/cat.jpg);
+background-repeat: repeat-x; */
+transition: 1s;
+}
+/* .box:active{
+    /* background-repeat: repeat-y; */
+    /* background-position: left ;
+} */ 
+.box:first-of-type{
+    /* background-attachment: fixed; */
+background-position: right top;
+}
+.box{
+    background-origin: border-box;
+    background: pink url(../imgs/cat.jpg) center no-repeat;
+}
+.box:hover{
+    background-origin: padding-box;
+}
+
+.box:active{
+background-origin: border-box;}
+
+.box:nth-of-type(2){    background-size: 100px 250px;
+}
+.box:nth-of-type(2):hover{    background-size: cover;
+}
+.box:nth-of-type(2):active{    background-size: 100% 100%;
+} 
+.box:nth-of-type(2){
+    background: url('../imgs/cat.jpg'), url('../imgs/기타1.jpg');
+    background-size: 200px 200px, 250px 150px;
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+}
+.box:nth-of-type(2):hover{
+    background-position: right top, left top;
+    transition: 1s;
+    background-size: 200px 200px, 250px 150px;
+
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semantic</title>
+</head>
+
+<body>
+    <header>
+      <hgroup>
+             <h1>로그(웹사이트제목)</h1>
+             <h2> welcome to my world</h2>
+      </hgroup>
+        <nav>
+            <ul>
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li>
+                <li><a href="#">menu5</a></li>
+            </ul>
+        </nav>
+        <aside> 사이드메뉴</aside>
+    </header>
+    <div class="content">
+        <section>
+            <h3> 섹션에 해당하는 제목</h3>
+            <article> welcome to my world</article>
+        </section>
+        <section>
+            <h3> 섹션에 해당하는 제목</h3>
+            <article> 
+                <figure>
+                     <img src="./imgs/naver.png" alt="네이버">
+                     <figcaption>네이버</figcaption>
+                </figure>
+            </article>
+        </section>
+        <section>
+            <h3> 계산기 만들기</h3>
+            <article> 
+                <form onclick="result.value=Number(num1.value)+Number(num2.value)">
+                    <input type="range" name="num1"> + 
+                    <input type="number" name="num2"> = 
+                    <output name="result"></output> 점
+                </form>
+                <form onclick="result.value=parseInt(num3.value)+parseInt(num4.value)">
+                    <input type="range" name="num3"> + 
+                    <input type="number" name="num4"> = 
+                    <output name="result"></output> 점
+                </form>
+                <p> <nobr>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, minus totam. Non eius necessitatibus deserunt commodi molestias! Quam vel consequuntur illum, laudantium a, explicabo id vitae ullam est atque maiores.</nobr></p>
+                <p>aaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb<wbr>bbbbbbbbb</wbr>bbbbbbbb</p>
+
+                <svg style="stroke-width:5">
+                    <rect width="200" height="200" fill="red"stroke="blue"></rect>
+                    <circle cx="100" cy="60" r="50" fill="orange"></circle>
+                </svg>
+                <svg stroke="red" width="300" style="border:1px solid blue">
+                    <polygon points="00 10,10 100,210 170, 250 123, 234 60">
+                    </polygon>
+                </svg>
+
+
+            </article>
+        </section>
+    </div>
+    <footer>
+        <address>Copyright AllRight Reserved</address>
+    </footer>
+
+
+
+</body>
+
+</html>

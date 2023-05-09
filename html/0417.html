@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h3 id="top"> 목적지</h3>
+<a href="#bottom">출발지</a>
+    <xmp>
+<h2> 글자관련태그</h2>
+<p> 
+    <ruby>  
+        <span>大韓民國</span>
+        <rp>(</rp>
+        <rt>대한민국</rt> 
+        <rp>)</rp>
+    </ruby>
+    <small>우리나라 </small>안녕하세요 
+<del><big>어서오세요</big></del>
+</p>
+<p>Lorem <b>ipsum,</b> dolor sit <i>amet</i> consectetur adipisicing elit. Fuga<big> consectetur </big>aspernatur labore, optio cupiditate ab <ins>adipisci</ins> expedita enim dolore molestiae. Voluptates eum eius minima totam praesentium? Iusto nisi vel natus.</p>
+<p>  H<sub>2</sub>O   CM<sup>2</sup></p>
+<p> <abbr title="hyper text markup language"> HTML</abbr>  
+    <acronym title="world wide web">www</acronym> 
+    그것을 <q cite="강남피부">피부</q>가 보이는 살았으며, 풀이 꽃이 있는 거선의 사랑의 이것이다. 우리 어디 우리 그리하였는가? 방지하는 이상은 하는 청춘을 그것을 새 뿐이다. <strike>발휘하기</strike> 청춘 구하기 불어 부패뿐이다. 이<cite> 착목한는</cite> 가장 길을 소리다.이것은 끓는다.</p>
+
+   <blockquote cite="청춘예찬"> <u>사랑</u>의 이것이다. 우리 어디 우리 그리하였는가? 방지하는 이상은 하는 <s>청춘</s>을 그것을 새 뿐이다. 발</blockquote>
+   <marquee> 움직이는 글자</marquee>
+   <mark>형광문자</mark>
+   <center> 가운데정렬</center>
+   <pre>
+          입력한대로
+
+           그대로 나오는 태그
+
+   </pre>
+   <pre>
+      &lt;   &gt;  &copy;  &amp;  &raquo;   &laquo;  &nbsp;
+    </pre>
+</xmp>
+<details>
+    <summary> HTML이란??</summary>
+    <p> 하이퍼텍스트 마크업 언어입니다.</p>
+</details>
+<input type="text" list="browser">
+<datalist id="browser">
+    <option value="Internet Explorer">
+    <option value="google Chrome">
+    <option value="Firefox">
+    <option value="Opera">
+</datalist>
+<address> Copyright All Right Reserved</address>
+<p> p태그 안에 address는 포함할 수 없다. <address> 주소</address></p>
+<address> <p>  address태그 안에 p 태그는 포함할 수 있다.</p></address>
+  <ul>
+     <p></p>     XXXX
+     <div></div>  XXXX
+    <li> 목록   <div></div><p></p>  OOOO    </li>
+  </ul>
+
+  <a href="#top"> 출발지</a>
+  <a name="bottom"> 목적지</a>
+ <a href="http://maps.google.com/maps?q=모란역&z=10">지도보기</a>
+<iframe src="http://maps.google.com/maps?q=모란역"></iframe>
+<div id="map" style="width:500px;height:400px;"></div>
+
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=36877278aa26693b21d3856ad74b9c89"></script>
+<script>
+    var container = document.getElementById('map');
+    var options = {
+        center: new kakao.maps.LatLng(33.450701, 126.570667),
+        level: 3
+    };
+
+    var map = new kakao.maps.Map(container, options);
+</script>
+</body>
+</html>
