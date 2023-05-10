@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dee1e0;
+    padding: 8px 100px;
+    }
+    .navbar_logo {
+        font-size: 20px;
+    }
+    .menu {
+        display: flex;
+    }
+
+    ul>li .menu1 {
+        display: none;
+    }
+    /* 이게 왜 안먹히는거야 menu>li>div */
+    
+    ul a {      
+        font-size: 12px;
+    }
+
+    .contact {
+        display: none; 
+    }
+        /* 이게 왜 안먹히는거야 */

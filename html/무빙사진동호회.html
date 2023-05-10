@@ -11,58 +11,67 @@
 </head>
 
 <body>
-    <header>
-        <div id="#logo">
-            <img src="../imgs/slide/dot.png">
-            <a href="logo">무빙사진동호회</a>
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <a href="#img"><img src="./imgs/slide/LOGO.png" 
+                alt="무빙사진동호회"></a>
         </div>
-        <nav class="nav">
-            <ul><a href="#">동호회소개</a>
+        <ul class="menu">
+            <li><a href="">동호회소개</a>
+              <div class="menu1">
                 <li><a href="#">연혁</a></li>
                 <li><a href="#">회칙</a></li>
                 <li><a href="#">이용안내</a></li>
-            </ul>
-            <ul><a href="#">갤러리</a>
-                <li><a href="#">풍경</a></li>
+              </div>
+            </li>
+            <li><a href="">갤러리</a>
+             <div class="menu1">
+                <li><a href="#">풍경자연</a></li>
                 <li><a href="#">인물</a></li>
                 <li><a href="#">사물</a></li>
-            </ul>
-            <ul><a href="#">교육안내</a>
-                <li><a href="#">기초사진</a></li>
-                <li><a href="#">디지털사진</a></li>
-                <li><a href="#">천문사진</a></li>
-            </ul>
-            <ul>contact
-                <form>
+              </div>
+            </li>
+            <li><a href="">교육안내</a>
+             <div class="menu1">
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">회칙</a></li>
+                <li><a href="#">이용안내</a></li>
+             </div>
+            </li>
+            <li><a href="">CONTACT</a>
+             <div class="menu1">
+                <form class="contact">
                     <table>
-                        <tr>
-                            <td>이름</td>
-                            <td><input name="name" type="text"></td>
-                        </tr>
-                        <tr>
-                            <td>이메일</td>
-                            <td><input type="email" name="email"></td>
-                        </tr>
-                        <tr>
-                            <td>보내실 말씀</td>
-                            <td><textarea name="message" cols="40" rows="5">메세지를 입력해주세요</textarea>
-                        </tr>
-                        <tr>
-                            <td>관심있는 사진</td>
-                            <td><input type="text" name="photo" list="photo">
-                                <datalist id="photo">
-                                    <option value="풍경">
-                                    <option value="인물">
-                                    <option value="사물">
-                                </datalist>
-                            </td>
-                        </tr>
+                       <tr>
+                         <td>이름</td>
+                         <td><input name="name" type="text"></td>
+                       </tr>
+                       <tr>
+                         <td>이메일</td>
+                         <td><input type="email" name="email"></td>
+                       </tr>
+                       <tr>
+                         <td>보내실 말씀</td>
+                         <td><textarea name="message" cols="40" rows="5">
+                           메세지를 입력해주세요</textarea>
+                       </tr>
+                       <tr>
+                         <td>관심있는 사진</td>
+                         <td><input type="text" name="photo" list="photo">
+                           <datalist id="photo">
+                             <option value="풍경">
+                             <option value="인물">
+                             <option value="사물">
+                           </datalist>
+                          </td>
+                       </tr>
                     </table>
-                </form>
-            </ul>
-        </nav>
-    </header>
-
+                   </form>
+             </div>
+            </li>
+        </ul>
+    </nav>
+   
     <section>
         <div id="#imgsbar">
             <ul class="imgsbar">
