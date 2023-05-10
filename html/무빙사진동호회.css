@@ -10,18 +10,23 @@
     }
     .menu {
         display: flex;
+        
     }
 
-    ul>li .menu1 {
+    ul>li>a {
+        font-size: 20px;
+    }
+    .menu1 {
         display: none;
     }
-    /* 이게 왜 안먹히는거야 menu>li>div */
     
     ul a {      
         font-size: 12px;
+        display: block;
+        padding: 10px;
     }
 
-    .contact {
-        display: none; 
-    }
-        /* 이게 왜 안먹히는거야 */
+   ul>li:hover ol {
+    display: block;
+    width: 100%;
+   }

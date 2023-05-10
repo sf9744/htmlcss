@@ -21,22 +21,23 @@ header h1 img {
 }
 
 /* hover효과 주기 */
-ul>li:hover {
+nav ul>li:hover {
     background: gray;
 }
 
-ul>li:hover>a {
+nav ul>li:hover>a {
     color: black
         /* 이건 뭐지 */
 }
 
-ol>li:hover {
+nav ol>li:hover {
     background-color: darkgray;
 }
 
 /* 테이블디자인 */
 .table {
     width: 100%;
+    margin-top: 20px;
 }
 
 .table tr {
@@ -50,6 +51,15 @@ ol>li:hover {
 .contents {
     background-color: gray;
 }
+
+.contents h2{
+    color: gray;
+    text-align: center;
+}
+.table td,a{
+    color:white;
+}
+
 
 /* 이미지슬라이드 화살표 변경 */
 .swiper-button-prev:after {
@@ -70,7 +80,9 @@ ol>li:hover {
 .swiper-button-next {
     background: url(../imgs/화살표\ 우측으로다가.png);
     background-size: 100% 100%;
-    width: 50px !important;/* 이 신발 고양이 */
+    width: 50px !important;
+    
+    /* 이 신발 고양이 */
     /* filter: Fliph;
     box-sizing: 2px 2px black;
     border-radius: 50%; */
@@ -96,6 +108,10 @@ button {
 }
 .icons {
     position: relative;
+}
+.text{
+    text-align: center;
+    /* display: none; */
 }
 .icons:hover>.text{
     transition: 1s;
