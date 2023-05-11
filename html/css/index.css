@@ -1,71 +1,42 @@
-* {
-    /* border:1px solid red; */
-    padding: 0px;
-    margin: 0px;
-}
+@charset "utf-8";
 
-body {
-    background-color: #F3F1E9;
-}
+/* (step1)
+ ------------------------------------------ */
 
-header {
-    height: 60px;
-    margin: 10px;
-}
 
-nav {
-    margin: 10px;
-}
 
-nav ul {
-    list-style: none;
-    text-align: center;
-    border-top: 1px solid red;
-    border-bottom: 1px solid red;
-    padding: 10px 0;
-}
 
-nav ul li {
-    display: inline;
-    text-transform: uppercase;
-    padding: 0 10px;
-    letter-spacing: 10px;
-}
+/* (step2)
+ ------------------------------------------ */
 
-nav ul li a {
-    text-decoration: none;
-    color: black;
-}
+/*
+ * 여기에 작성하세요.
+ */
 
-nav ul li:hover {
-    text-decoration: underline;
-}
 
-aside#left {
-    width: 175px;
-    margin-top: 20px;
-    float: left;
-}
 
-#left h4 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-}
+/* (step3)
+ ------------------------------------------ */
 
-#left ul {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color: #FFF;
-    list-style: none;
-    text-indent: 15px;
-}
-#left ul li{
-    background: #3f3f3f;
-    line-height:28px;
-    border-bottom: 1px solid #333;
-}
-#left ul li a{
-    text-decoration: none;
-    color: #FFF;
-    display: block;
-}
+/*
+ * 여기에 작성하세요.
+ */
+
+
+
+/* (step4)
+ ------------------------------------------ */
+
+/*
+ * 여기에 작성하세요.
+ */
+
+
+
+/* (step5)
+ ------------------------------------------ */
+
+/*
+ * 여기에 작성하세요.
+ */
+
