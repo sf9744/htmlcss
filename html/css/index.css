@@ -2,17 +2,25 @@
 
 /* (step1)
  ------------------------------------------ */
-
-
-
-
+header>h1{
+    width : 90%;
+    height: 80px;
+    display: block;
+    margin: auto;
+    /* margin-bottom: 10px; 위에 마진오토를 줬는데 왜 또 줌?*/
+    max-width:400px;
+}
 /* (step2)
  ------------------------------------------ */
+header a {
+    display: block;
+    height: 70px;
+    width: 100%;
+    background : url(../img/sub_logo.png) 
+    left top no-repeat;
+    text-indent: -1000px;
 
-/*
- * 여기에 작성하세요.
- */
-
+}
 
 
 /* (step3)

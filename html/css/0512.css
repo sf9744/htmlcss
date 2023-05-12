@@ -1,0 +1,85 @@
+.multi {
+    /* column-count: 3; */
+    padding: 30px;
+    column-rule: 5px dotted blue;
+    column-width: 120px;
+    column-rule-color: red;
+    column-gap: 20px;
+    column-rule-width: 5px;
+}
+
+/* .multi:hover p{
+    column-span: all;
+} */
+/* ----------끝.the end요-------- */
+
+.charts {    display: flex;
+    justify-content: center;
+    padding: 50px;}
+svg {    width: 220px;
+    height: 220px;
+    padding: 10px;
+}
+svg circle {
+    fill: green;    /* 면색 */
+    stroke: orange;
+    stroke-width: 10;
+    stroke-dasharray: 630;
+    stroke-dashoffset: 50;
+    stroke-linecap: round;
+}
+@keyframes line1 {
+    from {
+        stroke-dashoffset: 10;    }
+    to {
+        stroke-dashoffset: 60000;    }}
+.chart circle {
+    animation: line1 3s forwards;}
+.chart1 circle {
+    animation: line1 2s forwards;
+stroke: aqua;}
+.chart2 circle {
+    animation: line1 1s forwards;
+stroke: rebeccapurple;}
+
+/* 기본상태에서 영문글자가 나오고 마우스 올리면
+한글이 나오게 하기 */
+ul{
+    display: flex;
+    /* justify-content: center; */
+    padding: 50px;    
+}
+ul li{
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid black;
+    text-align: center;    
+    background-color: gray;
+}
+ul li .ko{
+display: none;
+}
+ul li a:hover>.en{
+    display: none;
+}
+ul li a:hover>.ko{
+    display: block;
+}
+/* --------------------- */
+/* ul>li>a>span:first-child{display: block;}
+ul>li>a>span:last-child{display: none;}
+ul>li>a:hover>span:first-child{display: none;}
+ul>li>a:hover>span:last-child{display: block;}
+ul{width: 500px;}
+ul>li{flex: 1;} */
+/* -------------------------- */
+ol>li>a>img:first-child{display:block;}
+ol>li>a>img:last-child{display:none;}
+ol>li>a:hover>img:first-child{display: none;}
+ol>li>a:hover>img:last-child{display: block;}
+ol{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}

@@ -1,0 +1,123 @@
+header {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid darkgrey;
+    background-color: rgb(223, 210, 210);
+    position: relative;
+    min-width: 1030px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    background-color: rgb(26, 23, 23);
+    bottom: 0;
+    right: 0;
+    
+}
+.menu {
+    display: flex;
+    color: white;
+    width: 150px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+}
+ol li a {
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+}
+ol{
+    display: none;
+}
+ 
+nav li:hover> ol{
+    display: block;
+    background-color: ghostwhite;
+    position: absolute;
+    top:35px;
+    z-index: 5;
+}
+
+nav:hover>li{
+    background-color: rgb(2, 56, 56);
+
+}
+.img_slide {
+   width: 1200px;
+   height: 300px;
+   overflow:hidden
+}
+.slide {
+width:3600px;
+height: 100%;
+animation: slide 10s infinite alternate;
+}
+.slide img {
+    width : 1200px;
+    height:100%;
+    display: block;
+    float: left;
+}
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-1200px);
+    }
+    100%{
+        transform: translateX(-2400px);
+    }
+}
+.section3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    max-width: 1200px;
+    min-width: 1030px;
+}
+.aside1>h3{
+    border-bottom: 5px solid goldenrod;
+}
+.aside2>h3{
+    border-bottom: 5px solid goldenrod;
+}
+table tr:nth-child(2){
+    background-color: goldenrod;
+}
+table tr:nth-child(4){
+    background-color: goldenrod;
+}
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(203, 203, 203);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    min-width: 1030px;    
+}
+
+address {
+    margin-left:20px;
+    }
+#sitelist {
+    width: 180px;
+}
+/* 모달창 만들기 */
+#modal{
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 10;
+}
