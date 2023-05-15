@@ -112,7 +112,7 @@ address {
     width: 180px;
 }
 /* 모달창 만들기 */
-#modal{
+/* #modal{
     width: 100%;
     height: 100%;
     background: rgb(0, 0, 0, 0.6);
@@ -120,4 +120,4 @@ address {
     left: 0;
     top:0;
     z-index: 10;
-}
+} */
